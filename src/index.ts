@@ -7,6 +7,8 @@ import authRoutes from "./routes/authRoutes";
 import trackRoutes from "./routes/trackRoutes";
 import { errorHandler } from "./middleware/errorHandler";
 import limiter from "./utils/limiter";
+import morgan from "morgan";
+
 
 
 dotenv.config();
@@ -16,6 +18,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 app.use(helmet());
+app.use(morgan("combined"));
 app.use(limiter)
 
 app.use("/api/auth", authRoutes);
