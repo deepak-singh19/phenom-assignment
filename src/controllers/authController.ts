@@ -21,15 +21,15 @@ export const handleSpotifyCallback = asyncHandler(async (req: Request, res: Resp
     const accessToken = await getAccessToken(code);
     spotifyApi.setAccessToken(accessToken);
 
-    // Get User Info
     const userInfo = await spotifyApi.getMe();
     const user_id = userInfo.body.id;
 
     // Generate JWT Token
     const token = generateToken(user_id, accessToken)
 
-    console.log("User ID: ", user_id)
-    console.log("Access Token: ", accessToken)
+    //LOGS for the USER ID and ACCESS TOKEN
+    // console.log("User ID: ", user_id)
+    // console.log("Access Token: ", accessToken)
 
     res.json({ success: true, token, user_id });
   } catch (error) {
