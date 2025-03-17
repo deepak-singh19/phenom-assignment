@@ -9,7 +9,7 @@ This project is a Node.js API built with TypeScript that integrates with the Spo
 - **Advice Integration**: Fetch advice based on the track name.
 - **Database Storage**: MongoDB stores user requests and responses.
 - **Rate Limiting**: Prevents excessive API calls.
-- **Dockerization**: Run the application in a containerized environment.
+- **Dockerization**: Run the application in a containerized environment.(OPTIONAL)
 
 ---
 
