@@ -58,7 +58,7 @@ SPOTIFY_REDIRECT_URI=your_callback_route
 npm run dev
 ```
 
-#### 5️⃣ Run with Docker
+#### 5️⃣ Run with Docker (OPTIONAL)
 ##### Build and Run the Docker Container
 ```sh
 docker build -t node-api .
