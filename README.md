@@ -9,7 +9,7 @@ This project is a Node.js API built with TypeScript that integrates with the Spo
 - **Advice Integration**: Fetch advice based on the track name.
 - **Database Storage**: MongoDB stores user requests and responses.
 - **Rate Limiting**: Prevents excessive API calls.
-- **Dockerization**: Run the application in a containerized environment.
+- **Dockerization**: Run the application in a containerized environment.(OPTIONAL)
 
 ---
 
@@ -58,7 +58,7 @@ SPOTIFY_REDIRECT_URI=your_callback_route
 npm run dev
 ```
 
-#### 5️⃣ Run with Docker
+#### 5️⃣ Run with Docker (OPTIONAL)
 ##### Build and Run the Docker Container
 ```sh
 docker build -t node-api .
@@ -87,15 +87,6 @@ The application follows a **modular and scalable architecture**, with separate l
 3. **Middleware Layer**: Implements authentication, rate limiting, and error handling.
 4. **Database Layer**: Manages MongoDB operations using Mongoose.
 5. **Security Layer**: Includes JWT authentication and security headers.
-
----
-
-
-
----
-
-## 🔮 Future Improvements
-- ✅ Improve **error handling & logging** using Winston.
 
 ---
 
