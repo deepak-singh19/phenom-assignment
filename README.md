@@ -90,15 +90,6 @@ The application follows a **modular and scalable architecture**, with separate l
 
 ---
 
-
-
----
-
-## 🔮 Future Improvements
-- ✅ Improve **error handling & logging** using Winston.
-
----
-
 ## 📚 Biggest Learning Takeaway
 This project demonstrated the power of **third-party API integrations** while managing authentication, rate limiting, and data consistency effectively. Using TypeScript and Docker helped improve scalability and maintainability.
 
