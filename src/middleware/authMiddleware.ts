@@ -19,6 +19,7 @@ const authenticateJWT = (req: AuthRequest, res: Response, next: NextFunction) =>
   jwt.verify(token, process.env.JWT_SECRET as string, (err, decoded) => {
     if (err) return next(new AppError("Forbidden: Invalid token", 403));
 
+    //Checking type of decoded
     if (typeof decoded !== "object") {
       return next(new AppError("Invalid token payload", 403));
     }
